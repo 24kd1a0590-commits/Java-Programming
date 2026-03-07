@@ -1,14 +1,20 @@
+class Calculator
+{
+   int add(int n1,int n2)
+   {
+      int r1=n1+n2;
+      return r1;
+   }
+}
 class Hello
 {
-public static void main(String args[])
-{
-  for(int i=1;i<=7;i++)
-  {
-   System.out.println("Day "+i);
-   for(int j=1;j<=7;j++)
+   public static void main(String args[])
    {
-      System.out.println(" "+( j+8) +'-' +(j+9));
+      int num1=7;
+      int num2=2;
+      Calculator calc=new Calculator();
+      int result=calc.add(num1,num2);
+      System.out.println(result);
+
    }
-  }
-}
 }
