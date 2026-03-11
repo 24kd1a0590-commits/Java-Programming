@@ -1,22 +1,22 @@
-class Computer
+class calculator
 {
-   public void playmusic()
+   public int add(int n1,int n2,int n3)
    {
-      System.out.println("Plays the music of Darshan Raval");
+      return n1+n2+n3;
    }
-   public String getmeapen(int cost)
+   public int add(int n1,int n2)
    {
-      if(cost>10)
-         return "Pen";
-      return "Nothing";
+      return n1+n2;
    }
 }
-public class demo
+class demo
 {
    public static void main(String args[])
    {
-      Computer obj=new Computer();
-      obj.playmusic();
-      System.out.println(obj.getmeapen(10));
+      calculator obj=new calculator();
+      int r1=obj.add(3,4,5);
+      int r2=obj.add(7,6);
+      System.out.println(r1);
+      System.out.println(r2);
    }
 }
