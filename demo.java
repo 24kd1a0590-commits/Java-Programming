@@ -8,26 +8,11 @@ class demo
 {
    public static void main(String args[])
    {
-      Student s1=new Student();
-      s1.rollno=1;
-      s1.name="Prathyusha";
-      s1.marks=99;
-      Student s2=new Student();
-      s2.name="Tulasi";
-      s2.rollno=2;
-      s2.marks=88;
-      Student s3=new Student();
-      s3.rollno=3;
-      s3.name="Vaish";
-      s3.marks=89;
-
-      Student students[]=new Student[3];
-      students[0]=s1;
-      students[1]=s2;
-      students[2]=s3;
-     for(Student stud: students)
-     {
-      System.out.println(stud.name + ":" + stud.marks);
-     }
+     String name="Prathyusha";
+     name=name + "Royals";
+     String s1="navin";
+     String s2="navin";
+     System.out.println(System.identityHashCode(s2)); // Addresses of s1 and s2 are same
+     System.out.println(System.identityHashCode(name)); // It creates a new address for after appending 
    }
 }
